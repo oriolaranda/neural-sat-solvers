@@ -1,0 +1,47 @@
+model_name: "pdp-sat-4-100"
+model_type: "np-nd-np"
+version: "2.0g"
+has_meta_data: false # true
+train_path: ["../datasets/sat-4-100.json"]
+validation_path: ["../datasets/test/4-SAT-100_0_7.0_7.5.json"]
+test_path: ["../datasets/test/4-SAT-100_0_7.0_7.5.json", "../datasets/test/4-SAT-100_1_7.5_8.0.json", "../datasets/test/4-SAT-100_2_8.0_8.5.json", "../datasets/test/4-SAT-100_3_8.5_9.0.json", "../datasets/test/4-SAT-100_4_9.0_9.5.json", "../datasets/test/4-SAT-100_5_9.5_10.0.json", "../datasets/test/4-SAT-100_6_10.0_10.5.json"]
+model_path: "../trained-models"
+repetition_num: 1
+train_epoch_size: 40000
+epoch_num: 50
+label_dim: 1
+edge_feature_dim: 1
+meta_feature_dim: 0 # 1
+error_dim: 3
+metric_index: 0
+prediction_dim: 1
+hidden_dim: 150  # 110
+mem_hidden_dim: 100
+agg_hidden_dim: 100  # 135
+mem_agg_hidden_dim: 50  # 50
+classifier_dim: 50  # 100
+batch_size: 5000
+learning_rate: 0.0001
+exploration: 0.1
+verbose: true
+randomized: true
+train_inner_recurrence_num: 1
+train_outer_recurrence_num: 10
+test_recurrence_num: 1000
+max_cache_size: 100000
+dropout: 0.2
+clip_norm: 0.65
+weight_decay: 0.0000000001
+loss_sharpness: 5
+train_batch_limit: 4000000
+test_batch_limit: 40000000
+generator: "uniform"
+min_n: 4
+max_n: 100
+min_alpha: 2
+max_alpha: 10
+min_k: 2
+max_k: 10
+local_search_iteration: 1000
+epsilon: 0.5
+lambda: 1
