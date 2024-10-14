@@ -1,4 +1,7 @@
-# Neural SAT Solvers
+# Generalization of Neural SAT Solvers Through Neural Algorithmic Reasoning
+
+Master's thesis performed at Machine Learning group at TUM, under supervision of Prof. Stephan Günnemann and Johanna Sommer.
+
 
 ## Installation
 
